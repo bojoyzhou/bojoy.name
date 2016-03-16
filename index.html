@@ -4,7 +4,7 @@ title: 我的Blog
 ---
 <ul class="index-posts">
     {% for post in site.posts %}
-    <li>
+    <li class="index-post-item">
         <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <p class="tags">
             {% for tag in post.tags %}

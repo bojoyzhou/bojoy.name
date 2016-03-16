@@ -8,6 +8,15 @@ body {
     font-size: 16px;
     color: #000;
     line-height: 1.5;
+    overflow: hidden;
+}
+html{
+}
+body{
+    max-width: 1280px;
+    position: relative;
+    background: url(/images/right_bg.jpg) no-repeat top right;
+    background-size: 50% 100%;
 }
 ul, ol{
     padding: 0;
@@ -20,23 +29,24 @@ a {
     text-decoration: none;
     color: #333;
 }
-li a{
+li>a{
     display: block;
     height: 100%;
     width: 100%;
 }
 .logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
     box-shadow: 0px 0px 15px #000;
     border: #aaa solid 1px;
     margin: 55px auto;
     display: block;
+    overflow: hidden;
 }
-
-.fl {
-    float: left;
+.logo img{
+    width: 100%;
+    height: 100%;
 }
 
 .content, .post-list, .profile{
@@ -51,12 +61,14 @@ li a{
     font-size: 14px;
     padding-right: 450px;
     box-sizing: border-box;
+    overflow: auto;
+    background-color: #fff;
 }
 
 .post-list {
     width: 250px;
     right: 200px;
-    background: #ccc;
+    background: #e2e7ea;
     padding: 16px;
     box-sizing: border-box;
     line-height: 2.3;
@@ -65,28 +77,59 @@ li a{
 .profile {
     width: 200px;
     right: 0;
-    background: #999;
+    background: #d1d6d9;
     text-align: center;
     line-height: 2.3;
+    box-shadow: -2px 0 7px #aaa;
 }
-.post-tags{
-    background: #aaa;
+.post-category{
 }
-.post-tags li{
-    border-bottom: #ccc solid 1px;
+.post-category li{
+    background: #f12f25;
+    position: relative;
+    margin-bottom: 2px;
+}
+.post-category li a{
+    color: #fff;
+}
+.post-category li::before{
+    content: ' ';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-left: 18px solid #d1d6d9;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    left: 0;
 }
 footer{
     position: absolute;
     bottom: 55px;
     width: 100%;
     font-size: 14px;
+    color: #eb7a2c;
+}
+footer ul a{
+    color: #eb7a2c;
+    text-decoration: underline;
+}
+.index-posts{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .index-posts .title{
     font-size: 20px;
     font-weight: bold;
-    background: #aaa;
+    line-height: 3;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: url(/images/title_bg.jpg) center center;
+    background-size: cover;
+    color: #fff;
 }
-.index-posts li{
+.index-posts .index-post-item{
+    list-style: none;
     padding: 16px;
     padding-bottom: 32px;
     border-bottom: #ccc solid 1px;
@@ -96,7 +139,7 @@ footer{
 }
 
 .index-posts .tags span{
-    padding: 0 10px;
+    padding: 5px 10px;
     border: #ced solid 1px;
 }
 .index-posts .tags em{
@@ -105,4 +148,5 @@ footer{
     display: block;
     height: 100%;
     top: 0;
+    color: #eb7a2c;
 }

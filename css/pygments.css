@@ -1,0 +1,68 @@
+/*
+ * GitHub style for Pygments syntax contenter, for use with Jekyll
+ * Courtesy of GitHub.com
+ */
+
+.content pre, pre, .content .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
+.content .c { color: #999988; font-style: italic; }
+.content .err { color: #a61717; background-color: #e3d2d2; }
+.content .k { font-weight: bold; }
+.content .o { font-weight: bold; }
+.content .cm { color: #999988; font-style: italic; }
+.content .cp { color: #999999; font-weight: bold; }
+.content .c1 { color: #999988; font-style: italic; }
+.content .cs { color: #999999; font-weight: bold; font-style: italic; }
+.content .gd { color: #000000; background-color: #ffdddd; }
+.content .gd .x { color: #000000; background-color: #ffaaaa; }
+.content .ge { font-style: italic; }
+.content .gr { color: #aa0000; }
+.content .gh { color: #999999; }
+.content .gi { color: #000000; background-color: #ddffdd; }
+.content .gi .x { color: #000000; background-color: #aaffaa; }
+.content .go { color: #888888; }
+.content .gp { color: #555555; }
+.content .gs { font-weight: bold; }
+.content .gu { color: #800080; font-weight: bold; }
+.content .gt { color: #aa0000; }
+.content .kc { font-weight: bold; }
+.content .kd { font-weight: bold; }
+.content .kn { font-weight: bold; }
+.content .kp { font-weight: bold; }
+.content .kr { font-weight: bold; }
+.content .kt { color: #445588; font-weight: bold; }
+.content .m { color: #009999; }
+.content .s { color: #dd1144; }
+.content .n { color: #333333; }
+.content .na { color: teal; }
+.content .nb { color: #0086b3; }
+.content .nc { color: #445588; font-weight: bold; }
+.content .no { color: teal; }
+.content .ni { color: purple; }
+.content .ne { color: #990000; font-weight: bold; }
+.content .nf { color: #990000; font-weight: bold; }
+.content .nn { color: #555555; }
+.content .nt { color: navy; }
+.content .nv { color: teal; }
+.content .ow { font-weight: bold; }
+.content .w { color: #bbbbbb; }
+.content .mf { color: #009999; }
+.content .mh { color: #009999; }
+.content .mi { color: #009999; }
+.content .mo { color: #009999; }
+.content .sb { color: #dd1144; }
+.content .sc { color: #dd1144; }
+.content .sd { color: #dd1144; }
+.content .s2 { color: #dd1144; }
+.content .se { color: #dd1144; }
+.content .sh { color: #dd1144; }
+.content .si { color: #dd1144; }
+.content .sx { color: #dd1144; }
+.content .sr { color: #009926; }
+.content .s1 { color: #dd1144; }
+.content .ss { color: #990073; }
+.content .bp { color: #999999; }
+.content .vc { color: teal; }
+.content .vg { color: teal; }
+.content .vi { color: teal; }
+.content .il { color: #009999; }
+.content .gc { color: #999; background-color: #EAF2F5; }
