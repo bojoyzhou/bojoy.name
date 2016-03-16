@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-　　<html>
-　　<head>
-　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-　　　　<title>{{ page.title }}</title>
-　　</head>
-　　<body>
-
-　　　　{{ content }}
-
-　　</body>
-　　</html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <div class="content">
+        {{ content }}
+    </div>
+    <div class="post-list">
+        <ul>
+        {% for post in site.posts %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+                {{ post.title }}
+            </a></li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="profile">
+        <img class="logo" src="/favicon.jpg" alt="">
+        <ul class="post-tags">
+        {% for tag in site.tags %}
+            <li><a href="{{site.baseurl}}/tags/?tag={{tag[0] | cgi}}" title="{{ tag[0] }}">
+                {{ tag[0] }}({{ tag[1].size }})
+            </a></li>
+        {% endfor %}
+        </ul>
+        <footer>
+            <p>友情链接</p>
+            <ul>
+                <li>link1</li>
+                <li>link1</li>
+                <li>link1</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
