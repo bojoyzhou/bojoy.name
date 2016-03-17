@@ -1,0 +1,13 @@
+<div class="post-list">
+    <ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == 'notes' %}
+            {% for post in cat[1] %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+                    {{ post.title }}
+                </a></li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>

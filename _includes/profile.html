@@ -1,0 +1,18 @@
+<div class="profile">
+    <a class="logo" href="/"><img src="/1favicon.jpg" alt=""></a>
+    <ul class="post-category">
+    {% for cat in site.categories %}
+        <li><a href="{{site.baseurl}}/categories/{{ cat | first }}/" title="{{ cat | first}}">
+            {{ cat[0] }}({{ cat[1].size }})
+        </a></li>
+    {% endfor %}
+    </ul>
+    <footer>
+        <p>友情链接</p>
+        <ul>
+            <li><a href="">link1</a></li>
+            <li><a href="">link1</a></li>
+            <li><a href="">link1</a></li>
+        </ul>
+    </footer>
+</div>

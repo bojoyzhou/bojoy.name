@@ -1,0 +1,22 @@
+---
+layout: categories/notes
+title: bojoyzhou
+---
+<ul class="index-posts">
+    {% for post in site.posts %}
+        {% if post.categories[0] == 'notes' %}
+            <li class="index-post-item">
+                <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <p class="tags">
+                    {% for tag in post.tags %}
+                        <span>{{ tag }}</span>
+                    {% endfor %}
+                    <em> {{ post.date | date_to_string }} </em>
+                </p>
+                <p>
+                    {{ post.content }}
+                </p>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

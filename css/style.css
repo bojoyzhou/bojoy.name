@@ -21,14 +21,7 @@ body{
 ul, ol{
     padding: 0;
 }
-li {
-    list-style: none;
-}
 
-a {
-    text-decoration: none;
-    color: #333;
-}
 li>a{
     display: block;
     height: 100%;
@@ -55,6 +48,10 @@ li>a{
     top: 0;
 }
 
+.post-list li, .profile li{
+    list-style: none;
+}
+
 .content {
     width: 100%;
     left: 0;
@@ -72,6 +69,7 @@ li>a{
     padding: 16px;
     box-sizing: border-box;
     line-height: 2.3;
+    list-style: none;
 }
 
 .profile {
@@ -85,6 +83,8 @@ li>a{
 .post-category{
 }
 .post-category li{
+    height: 36px;
+    line-height: 36px;
     background: #f12f25;
     position: relative;
     margin-bottom: 2px;

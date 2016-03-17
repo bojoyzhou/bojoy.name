@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 安装Jekyll并部署到github
-category: 技术
+category: tech
 tags: [jekyll, github.io, pages.github]
 ---
 
