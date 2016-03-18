@@ -1,5 +1,2 @@
-    watch : true
-highlight : true
- markdown : kramdown
- kramdown :
-    input : GFM
+highlight:true
+markdown:kramdown
